@@ -1,4 +1,3 @@
-document.writeln('hello world');
 console.log("hello world");
 /*
 Il programma dovrà chiedere all'utente:
@@ -25,3 +24,8 @@ TOOLS:
 */
 
 //Chiedo quanti km vuole percorrere l'utente
+//Chiedo quanti anni ha l'utente
+//Creo variabile per costo al km
+//confronto km utente con km del servizio e salvo in una variabile il risultato effettivo 
+//confronto età utente con condizionale per capire quale sconto applicare (se lo sconto si applica)
+//stampo un messaggio in pagina col prezzo finale
