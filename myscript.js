@@ -48,9 +48,8 @@ if (PassengerAge < 18) {
     PrezzoReale = price;
 }
 
-
-
 const PrezzoUtente = parseInt(PrezzoReale);
+console.log(PrezzoUtente);
 //converto i risultti dei costi dei biglietti in numeri interi
 
 
