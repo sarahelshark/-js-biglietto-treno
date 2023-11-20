@@ -60,7 +60,7 @@ if (PassengerAge < 18) {
 } else if (PassengerAge > 65) {
     document.getElementById('my_id').innerHTML = `Il prezzo del biglietto sarebbe stato ${price}&euro;, ma grazie al tuo sconto anziani il prezzo finale è ${PrezzoUtente}&euro;`;
 } else {
-    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto è ${PrezzoUtente}&euro;`;
+    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto è ${PrezzoReale}&euro;`;
 }
 
 
