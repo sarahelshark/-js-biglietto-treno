@@ -24,7 +24,14 @@ TOOLS:
 */
 
 //Chiedo quanti km vuole percorrere l'utente
+const PassengerKm;
+PassengerKm = prompt("Quanti km deve percorrere il passeggero?");
+console.log(PassengerKm);
+
 //Chiedo quanti anni ha l'utente
+const PassengerAge;
+PassengerAge = prompt("Quanti anni ha il passeggero?");
+console.log(PassengerAge);
 //Creo variabile per costo al km
 //confronto km utente con km del servizio e salvo in una variabile il risultato effettivo 
 //confronto età utente con condizionale per capire quale sconto applicare (se lo sconto si applica)
