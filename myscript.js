@@ -24,15 +24,16 @@ TOOLS:
 */
 
 //Chiedo quanti km vuole percorrere l'utente
-const PassengerKm;
-PassengerKm = prompt("Quanti km deve percorrere il passeggero?");
+let PassengerKm = parseInt(prompt("Quanti km deve percorrere il passeggero?"));
 console.log(PassengerKm);
-
+ 
 //Chiedo quanti anni ha l'utente
-const PassengerAge;
-PassengerAge = prompt("Quanti anni ha il passeggero?");
+let PassengerAge = parseInt(prompt("Quanti anni ha il passeggero?")); 
 console.log(PassengerAge);
-//Creo variabile per costo al km
-//confronto km utente con km del servizio e salvo in una variabile il risultato effettivo 
+
+//confronto km utente con km del servizio per un prezzo iniziale (non tiene anora conto della eta) e salvo in una variabile il risultato effettivo 
+let price = PassengerKm * .21;
+console.log(price);
+
 //confronto età utente con condizionale per capire quale sconto applicare (se lo sconto si applica)
 //stampo un messaggio in pagina col prezzo finale
