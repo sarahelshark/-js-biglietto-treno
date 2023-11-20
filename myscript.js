@@ -33,7 +33,7 @@ let PassengerAge = parseInt(prompt("Quanti anni ha il passeggero?"));
 console.log(PassengerAge);
 
 //confronto km utente con km del servizio per un prezzo iniziale (non tiene anora conto della eta) e salvo in una variabile il risultato effettivo 
-let price = PassengerKm * .21;
+let price =parseInt( PassengerKm * .21);
 console.log(price);
 
 //confronto età utente con condizionale per capire quale sconto applicare (se lo sconto si applica)
@@ -51,7 +51,6 @@ if (PassengerAge < 18) {
 console.log(PrezzoReale); //log in console
 
 const PrezzoUtente = parseInt(PrezzoReale);
-console.log(PrezzoUtente);
 //converto i risultti dei costi dei biglietti in numeri interi
 
 
