@@ -45,10 +45,10 @@ if (PassengerAge < 18) {
 } else if (PassengerAge > 65) {
     PrezzoReale = price - (price * .4);
 } else {
-    finalPrice = price;
+    PrezzoReale = price;
 }
 
-console.log(PrezzoReale); //log in console
+
 
 const PrezzoUtente = parseInt(PrezzoReale);
 //converto i risultti dei costi dei biglietti in numeri interi
