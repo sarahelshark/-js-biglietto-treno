@@ -25,7 +25,7 @@ TOOLS:
 */
 
 //Chiedo quanti km vuole percorrere l'utente
-let PassengerKm = parseInt(prompt("Quanti km deve percorrere il passeggero?"));
+let PassengerKm = parseInt(prompt("Quanti km deve percorrere il passeggero?")); //parseint per convertire una value in numero intero
 console.log(PassengerKm);
  
 //Chiedo quanti anni ha l'utente
@@ -50,13 +50,18 @@ if (PassengerAge < 18) {
 
 console.log(PrezzoReale); //log in console
 
+const PrezzoUtente = parseInt(PrezzoReale);
+console.log(PrezzoUtente);
+//converto i risultti dei costi dei biglietti in numeri interi
+
+
 //stampo un messaggio in pagina col prezzo finale
 if (PassengerAge < 18) {
-    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto sarebbe stato ${price}&euro;, ma grazie al tuo sconto minorenne il prezzo finale è ${PrezzoReale}&euro;`;
+    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto sarebbe stato ${price}&euro;, ma grazie al tuo sconto minorenne il prezzo finale è ${PrezzoUtente}&euro;`;
 } else if (PassengerAge > 65) {
-    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto sarebbe stato ${price}&euro;, ma grazie al tuo sconto anziani il prezzo finale è ${PrezzoReale}&euro;`;
+    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto sarebbe stato ${price}&euro;, ma grazie al tuo sconto anziani il prezzo finale è ${PrezzoUtente}&euro;`;
 } else {
-    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto è ${PrezzoReale}&euro;`;
+    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto è ${PrezzoUtente}&euro;`;
 }
 
 
