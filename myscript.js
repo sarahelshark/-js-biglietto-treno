@@ -39,15 +39,24 @@ console.log(price);
 //confronto età utente con condizionale per capire quale sconto applicare (se lo sconto si applica)
 // (se < 18 ottiene -20% se >65 ottiene -40%)
 let PrezzoReale;  //dichiarazione variabile finale
-console.log(PrezzoReale); //log in console
 
 if (PassengerAge < 18) {
-    PrezzoReale = price - (price * .2)
+    PrezzoReale = price - (price * .2);  //s40emplifico calcolo percentuale facendo 20 / 100 = .2
 } else if (PassengerAge > 65) {
     PrezzoReale = price - (price * .4);
 } else {
     finalPrice = price;
 }
 
+console.log(PrezzoReale); //log in console
+
+//stampo un messaggio in pagina col prezzo finale
+if (PassengerAge < 18) {
+    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto sarebbe stato ${price}&euro;, ma grazie al tuo sconto minorenne il prezzo finale è ${PrezzoReale}&euro;`;
+} else if (PassengerAge > 65) {
+    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto sarebbe stato ${price}&euro;, ma grazie al tuo sconto anziani il prezzo finale è ${PrezzoReale}&euro;`;
+} else {
+    document.getElementById('my_id').innerHTML = `Il prezzo del biglietto è ${PrezzoReale}&euro;`;
+}
 
 
