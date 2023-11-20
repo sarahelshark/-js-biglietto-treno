@@ -20,6 +20,7 @@ TOOLS:
 -let/const
 -condizionali che si sviluppano a partire dai dati acquisiti
 -writeln oppure un alert dove riporto il risultato
+-percentuali in javascript
 
 */
 
@@ -36,4 +37,17 @@ let price = PassengerKm * .21;
 console.log(price);
 
 //confronto età utente con condizionale per capire quale sconto applicare (se lo sconto si applica)
-//stampo un messaggio in pagina col prezzo finale
+// (se < 18 ottiene -20% se >65 ottiene -40%)
+let PrezzoReale;  //dichiarazione variabile finale
+console.log(PrezzoReale); //log in console
+
+if (PassengerAge < 18) {
+    PrezzoReale = price - (price * .2)
+} else if (PassengerAge > 65) {
+    PrezzoReale = price - (price * .4);
+} else {
+    finalPrice = price;
+}
+
+
+
